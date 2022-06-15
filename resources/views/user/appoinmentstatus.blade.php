@@ -40,7 +40,7 @@
             </form>
             
           </li>
-        </ul>
+        </ul> 
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -52,16 +52,16 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
+              <a class="nav-link" href="#">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="doctors.html">Doctors</a>
+              <a class="nav-link" href="/#doctors">Doctors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">News</a>
+              <a class="nav-link" href="#">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
 
             @if (Route::has('login'))
@@ -94,9 +94,16 @@
     </nav>
   </header>
 
+  <div class="container" style="margin-top:20px">
+
+    <a style="margin-left: 700px" class="btn btn-primary" href="{{url('exportpdf')}}">Export as Pdf</a>
+
+
+  </div>
+
   <div align='center' style="padding: 50px" >
 
-    <table>
+    <table >
 
         <tr style="background-color: black; color:white ">
             <th style="padding: 10px ; font-size :20px">Doctor Name</th>

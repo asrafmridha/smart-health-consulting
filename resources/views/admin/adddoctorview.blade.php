@@ -26,7 +26,7 @@
         @include('admin.sidebar')
 
        
-        @if ( session()->has ('message') )
+        {{-- @if ( session()->has ('message') )
 
  
         <div align='cente' style="margin-top: 100px">
@@ -34,7 +34,7 @@
       
         </div>
   
-        @endif
+        @endif --}}
      
       @include('admin.navbar')
 
@@ -110,8 +110,21 @@
        
           
         </div>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js" integrity="sha512-MqEDqB7me8klOYxXXQlB4LaNf9V9S0+sG1i8LtPOYmHqICuEZ9ZLbyV3qIfADg2UJcLyCm4fawNiFvnYbcBJ1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
 
-     
+        @if (Session::has('adddoctor'))
+
+        <script>
+           swal('Great Job!',"{!! Session::get('adddoctor')!!}, Success",{
+
+            button: 'Ok',
+           })
+
+        </script>
+            
+        @endif
         
      
 

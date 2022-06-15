@@ -38,7 +38,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="  " style="">
             <form class="" method="GET" action="{{url('searchforuser/')}}">
-              <input type="text"  class=" text-black " name="search" placeholder="Search Doctor" required>
+              <input type="text"  class=" text-black " name="search" placeholder="Search Doctor/Specialist" required>
     
               <button style="background-color: green;margin-left: 2px; padding:11px" class="btn btn-primary" type="submit">Search</button>
             </form>
@@ -58,13 +58,12 @@
             </li>
          
             <li class="nav-item">
-              <a class="nav-link" href="">Doctors</a>
+              <a class="nav-link" href="#doctors">Doctors</a>
             </li>
+          
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="{{url('contactview')}}">Complain
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" style="background-color: green ;margin-right:10px; color:black " 
@@ -122,7 +121,7 @@
       <div class="container text-center wow zoomIn">
         <span class="subhead">Let's make your life happier</span>
         <h1 class="display-4">Healthy Living</h1>
-        <a href="#" class="btn btn-primary">Let's Consult</a>
+        <a href="{{url('login')}}" class="btn btn-primary">Let's Consult</a>
       </div>
     </div>
   </div>
@@ -165,7 +164,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 py-3 wow fadeInUp">
             <h1>Welcome to Your Health <br> Center</h1>
-            <p class="text-grey mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Accusantium aperiam earum ipsa eius, inventore nemo labore eaque porro consequatur ex aspernatur. Explicabo, excepturi accusantium! Placeat voluptates esse ut optio facilis!</p>
+            <p class="text-grey mb-4">This system aims at maintaining patient health records and even getting appointments from various doctors for related treatments. The system user must register as a member of this system and keep updating his medical history. Patients can then select from a list of specialized doctors for respective treatments such as (skin specialist, ENT specialist cardiologist etc) at particular locations. Patients may also select suitable appointment timings for their meeting.</p>
             <a href="about.html" class="btn btn-primary">Learn More</a>
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">

@@ -45,5 +45,14 @@
           <span class="menu-title">All Doctor</span>
         </a>
       </li>
+
+      <li class="nav-item menu-items   {{Request::is('complainview') ? 'active': ''}}">
+        <a class="nav-link" href="{{url('complainview')}}">
+          <span class="menu-icon">
+            <i class="mdi mdi-file-document-box"></i>
+          </span>
+          <span class="menu-title">Complain</span>
+        </a>
+      </li>
     </ul>
   </nav>

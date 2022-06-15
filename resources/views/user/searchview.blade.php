@@ -36,7 +36,7 @@
         <ul class="navbar-nav ml-auto">
         <li class="  " style="">
           <form class="" method="GET" action="{{url('searchforuser/')}}">
-            <input type="text"  class=" text-black " name="search" placeholder="Search Doctor" required>
+            <input type="text"  class=" text-black " name="search" placeholder="Search Doctor/Specialist" required>
   
             <button style="background-color: green;margin-left: 2px; padding:11px" class="btn btn-primary" type="submit">Search</button>
           </form>
@@ -125,6 +125,9 @@
             <th style="padding: 10px ; font-size :20px">Speciality</th>
               <th style="padding: 10px ; font-size :20px">Room</th>
               <th style="padding: 10px ; font-size :20px">Image</th>
+              <th style="padding: 10px ; font-size :20px">Action</th>
+
+              
             
 
 
@@ -142,6 +145,10 @@
       
                   <td style="padding: 10px ; font-size :20px"><img height="100px" width="100px" src="doctorimage/{{$item['image']}}" 
                     alt=""></td>
+
+                    <td style="padding: 10px ; font-size :20px"><a style="text-decoration: none" href="{{url('userappoinmentview')}}">Let's Consult</a></td>
+
+                    
                      
                  
 

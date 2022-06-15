@@ -59,7 +59,7 @@
     
 
      
-            <div  style="background-color: green; margin-right:150px; color:black">
+            <div  style="background-color: green; margin-right:100px; color:black">
       
               <table style="margin-top: 150px">
                   <tr  >
@@ -69,7 +69,7 @@
                     <th style="padding: 10px ; font-size :20px">Speciality</th>
                       <th style="padding: 10px ; font-size :20px">Room</th>
                       <th style="padding: 10px ; font-size :20px">Image</th>
-                      <th style="padding: 10px ; font-size :20px">ADD </th>
+                     
                       <th style="padding: 10px ; font-size :20px">DELETE</th>
                       <th style="padding: 10px ; font-size :20px">Update</th>
 
@@ -88,9 +88,7 @@
               
                           <td style="padding: 10px ; font-size :20px"><img src="doctorimage/{{$item['image']}}" 
                             alt=""></td>
-                             
-                            <td style="padding: 10px ; font-size :20px"><a href="{{url('adddoctorview')}}">ADD NEW</a></td>
-
+                            
                             <td style="padding: 10px ; font-size :20px"><a onclick="return confirm('Are You Sure To Delete This ?')" href="{{url('deletedoctor/'.$item->id)}}">DELETE DOCTOR</a></td>
 
                             <td style="padding: 10px ; font-size :20px"><a href="{{url('updatedoctorview/'.$item->id)}}">UPDATE DOCTOR</a></td>

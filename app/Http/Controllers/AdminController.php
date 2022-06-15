@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Appoinment;
+use App\Models\Contact;
 use App\Models\Doctor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -166,6 +167,19 @@ class AdminController extends Controller
       $data=Doctor::where('name','Like','%'.$search.'%')->orwhere('speciality','Like','%'.$search.'%') ->get();
 
       return view('admin.alldoctorview',compact('data'));
+    }
+
+    function complainview(){
+
+      $data=Contact::all();
+
+      if(Auth::user()->usertype==1){
+          
+         return view('admin.complainview',compact('data'));
+
+      }
+
+      
     }
 
 

@@ -89,4 +89,21 @@ Route::get('updatedoctorview/{id}',[AdminController::class,'updatedoctorview']);
 
 Route::get('searchforuser/',[HomeController::class,'searchforuser']);
 
+//Route for all member Contact
+
+Route::get('contactview',[HomeController::class,'contactview']);
+
+//Route for save data for contact
+
+Route::post('contact',[HomeController::class,'contact']);
+
+//Route for admin see complainview
+
+Route::get('complainview',[AdminController::class,'complainview']);
+
+//Route for delete Complain for admin
+
+Route::get('deletecomplain{id}',[HomeController::class,'deletecomplain']);
+
+Route::get('exportpdf',[HomeController::class,'exportpdf']);
 
